@@ -3,23 +3,69 @@
     --cor-verde: #5AAF8E;
     --cor-azul: #2d6cac;
     --cor-lilas: #b5afe1;
-    --cor-branco: #ffffff;
+    --cor-branco: #fcfcfc;
     --cor-preto: #000000;
 }
 
 * {
     font-family: var(--bs-body-font-family);
+    font-size: 20px;
+}
+
+body {
+    background-color: var(--cor-branco);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo {
+    width: 20vw;
+}
+
+h1 {
+    font-size: 5vw;
+    color: var(--cor-verde);
+    font-weight: bolder;
+    text-align: start;
+    margin-bottom: 0.5vw;
 }
 
 .btn {
     background-color: var(--cor-verde);
     color: var(--cor-preto);
     font-weight: bolder;
-    font-size: 1.2rem;
+    font-size: 2vw;
     
 }
 
 .btn:hover {
     background-color: var(--cor-lilas);
     color: var(--cor-azul);
+}
+
+.rodape {
+    background-color: var(--cor-preto);
+    color: var(--cor-branco);
+}
+
+.rodape p {
+    font-size: 1vw;
+}
+
+.rodape a {
+    color: var(--cor-branco) !important; 
+}
+
+.rodape a:hover {
+    color: var(--cor-branco) !important;
+    font-weight: bold !important; 
 }

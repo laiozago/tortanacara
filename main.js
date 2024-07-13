@@ -78,7 +78,6 @@ document.addEventListener("DOMContentLoaded", () => {
             "Calcule: 101010 ÷ 3",
             "Calcule: 555555 + 444444"
         ],
-        equacoes_fracionarias: ["Pergunta 1 de Equações Fracionárias", "Pergunta 2 de Equações Fracionárias"],
         probleminhas: [
             "O triplo de um número menos 5 é igual a 25. Qual é esse número?",
             "Um número somado com seu triplo é igual a 32. Qual é esse número?",
@@ -111,7 +110,6 @@ document.addEventListener("DOMContentLoaded", () => {
             "Um número somado com a sua metade e a sua terça parte é igual a 36. Qual é esse número?",
             "Se a soma de um número com sua quinta parte é igual a 20, qual é esse número?"
         ],
-        sistemas_equacoes: ["Pergunta 1 de Sistemas de Equações", "Pergunta 2 de Sistemas de Equações"],
         problemas_duas_variaveis: [
             "João comprou 2 sucos e 1 salgado por R$10. Quanto custam cada suco e cada salgado?",
             "Maria tem R$50. Se ela gastar R$20 em livros e o resto em cadernos, quantos cadernos ela pode comprar se cada um custa R$5?",
