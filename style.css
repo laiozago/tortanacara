@@ -1,0 +1,25 @@
+:root {
+    --bs-body-font-family: 'Open Sans', sans-serif;
+    --cor-verde: #5AAF8E;
+    --cor-azul: #2d6cac;
+    --cor-lilas: #b5afe1;
+    --cor-branco: #ffffff;
+    --cor-preto: #000000;
+}
+
+* {
+    font-family: var(--bs-body-font-family);
+}
+
+.btn {
+    background-color: var(--cor-verde);
+    color: var(--cor-preto);
+    font-weight: bolder;
+    font-size: 1.2rem;
+    
+}
+
+.btn:hover {
+    background-color: var(--cor-lilas);
+    color: var(--cor-azul);
+}
