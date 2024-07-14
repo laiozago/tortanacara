@@ -32,7 +32,13 @@ document.addEventListener("DOMContentLoaded", () => {
             "Resolva: x² - 15x + 50 = 0",
             "Resolva: x² + 8x - 9 = 0",
             "Resolva: x² - 17x + 60 = 0",
-            "Resolva: x² + 9x - 10 = 0"
+            "Resolva: x² + 9x - 10 = 0",
+            "O produto de dois números ímpares consecutivos excede a soma deles em 47 unidades. Quais são esses números?",
+            "A soma de dois números é 22 e o produto 105. Quais são esses números?",
+            "A soma de dois números é 12 e a soma de seus quadrados é 74. Quais são esses números?",
+            "O perímetro de um retângulo é 34 m e a área 60 m². Determine os lados do retângulo.",
+            "Qual polígono, cujo número de lados é metade do numero de diagonais?"
+
         ],
         expressoes_numericas: [
             "Resolva: \\sqrt{16} + 4 * 3 - 5",
