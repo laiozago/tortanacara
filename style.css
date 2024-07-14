@@ -1,8 +1,7 @@
 :root {
     --bs-body-font-family: 'Open Sans', sans-serif;
     --cor-verde: #5AAF8E;
-    --cor-azul: #2d6cac;
-    --cor-lilas: #1A2845;
+    --cor-azul: #1A2845;
     --cor-branco: #FEFEFF;
     --cor-preto: #000000;
 }
@@ -48,7 +47,7 @@ h1 {
 }
 
 .btn:hover {
-    background-color: var(--cor-lilas);
+    background-color: var(--cor-azul);
     color: var(--cor-branco);
 }
 
