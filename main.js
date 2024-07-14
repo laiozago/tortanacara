@@ -126,6 +126,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const startTimerBtn = document.getElementById("startTimerBtn");
     const fecharModalBtn = document.getElementById("fecharModalBtn");
 
+    let timerIntervalId = null; // Variável para armazenar o intervalo do timer
+
     buttons.forEach(button => {
         button.addEventListener("click", () => {
             const tema = button.getAttribute("data-tema");
@@ -150,9 +152,18 @@ document.addEventListener("DOMContentLoaded", () => {
         startTimer(120); // 2 minutos = 120 segundos
     });
 
+    fecharModalBtn.addEventListener("click", () => {
+        if (timerIntervalId !== null) {
+            clearInterval(timerIntervalId);
+            timerIntervalId = null;
+            startTimerBtn.textContent = "Iniciar Timer"; // Resetar o texto do botão
+        }
+        questionModal.hide();
+    });
+
     function startTimer(duration) {
         let timer = duration, minutes, seconds;
-        const intervalId = setInterval(() => {
+        timerIntervalId = setInterval(() => {
             minutes = parseInt(timer / 60, 10);
             seconds = parseInt(timer % 60, 10);
 
@@ -162,7 +173,8 @@ document.addEventListener("DOMContentLoaded", () => {
             startTimerBtn.textContent = `${minutes}:${seconds}`;
 
             if (--timer < 0) {
-                clearInterval(intervalId);
+                clearInterval(timerIntervalId);
+                timerIntervalId = null;
                 startTimerBtn.textContent = "Iniciar Timer";
                 alert("Tempo esgotado!");
             }
